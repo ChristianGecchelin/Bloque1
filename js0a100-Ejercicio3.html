@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vector=[]
+        let pasadas = 0
+        let numero
+        let suma = 0
+        while (pasadas < 5) {
+            numero = Math.round(Math.random()*500)
+            vector.push(numero)
+            pasadas ++
+        }
+        console.log(vector)
+        suma = vector[4] + vector[3]
+        console.log(`La suma de los ultimos dos valores es ${suma}`)
+    </script>
+</body>
+</html>
